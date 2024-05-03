@@ -1,3 +1,4 @@
+-- Active: 1714487807212@@127.0.0.1@3306@information_schema
 CREATE DATABASE Testing_System_Db;
 
 USE Testing_System_Db;
@@ -7,7 +8,7 @@ CREATE TABLE Department(
    DepartmentName       VARCHAR(15)
 );
 
-CREATE TABLE Position_(
+CREATE TABLE `Position`(
     PositionID          INT PRIMARY KEY AUTO_INCREMENT,
     PositionName        VARCHAR(15)
 );
@@ -21,7 +22,7 @@ CREATE TABLE Account(
     CreateDate          DATE
 );
 
-CREATE TABLE Group_(
+CREATE TABLE `Group`(
     GroupID             INT PRIMARY KEY AUTO_INCREMENT,
     GroupName           VARCHAR(20),
     CreatorID           INT,
